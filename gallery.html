@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/components/video-carousel.css">
     <link rel="stylesheet" href="styles/components/photo-gallery.css">
     <link rel="stylesheet" href="styles/components/social-media-tags.css">
+    <link rel="stylesheet" href="styles/components/photo-gallery-selection.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,7 +24,7 @@
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/61d3f7ece8.js" crossorigin="anonymous"></script>
 
-    <title>Homepage</title>
+    <title>Gallery</title>
   </head>
   <body>
 
@@ -57,113 +58,61 @@
             </div>
         </div>
     </nav>
+    <!-- End Nav Menu -->
 
-    
-      
-    <!-- Video Gallery -->
-    <div class="video-container">
-      <div class="box box1">
-        <video src="videos/SkyFocus_Austin_360Bridge.mp4" autoplay loop muted></video>
-        <div class="content">
-          <h2>360 Bridge, Austin TX</h2>
-        </div>
-      </div>
-      <div class="box box2">
-        <video src="videos/SkyFocus_Austin_CongressBridge.mp4" autoplay loop muted></video>
-        <div class="content">
-          <h2>Congress Bridge, Austin TX</h2>
-        </div>
-      </div>
-      <div class="box box3">
-        <video src="videos/SkyFocus_Austin_Skyline_Edit.mp4" autoplay loop muted></video>
-        <div class="content">
-          <h2>Austin City Skyline</h2>
-        </div>
-      </div>
-    </div>
-    <!-- End Video gallery -->
-
-    <!-- Heading -->
-    <div class="container-fluid front-heading-container">
-      <div class="container">
-        <div class="row py-5">
-          <div class="col-auto">
-            <h1>Aerial Photography Prints</h1>
-            <hr>
-            <p>Austin TX, Chicago IL, Sun Valley ID, Galveston TX, Dallas TX, Pensacola FL</p>
-            <br>
-            <button class="gallery-btn" onclick="window.location.href='gallery.html'">See Galleries</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-    
     <!-- Photo Gallery -->
     <div class="container-fluid">
-      <div class="row py-4">
-        <div class="col-lg-4 col-md-12">
-        <img
-            src="images/drone/DJI_0003.jpg"
-            class="w-100 mb-3 show-on-scroll gallery-photo"
-            alt=""
-        />
-        <img
-            src="images/drone/DJI_0025.jpg"
-            class="w-100 mb-3 show-on-scroll gallery-photo"
-            alt=""
-        />
-
-        <img
-            src="images/drone/DJI_0062.jpg"
-            class="w-100 mb-3 show-on-scroll gallery-photo"
-            alt=""
-        />
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-4 col-md-12">
+                    <div class="row p-1">
+                        <a href="#" class="gallery-city-btn show-on-scroll" style="background-image: url(images/drone/DJI_0003.jpg);">
+                            Austin, TX
+                        </a>
+                    </div>
+                    <div class="row p-1">
+                        <a href="#" class="gallery-city-btn show-on-scroll" style="background-image: url(images/drone/DJI_0058.jpg);">
+                            Chicago, IL
+                        </a>
+                    </div>
+                
+                </div>
+    
+            
+                <div class="col-lg-4">
+                    <div class="row p-1">
+                        <a href="#" class="gallery-city-btn show-on-scroll" style="background-image: url(images/drone/DJI_0069.jpg);">
+                            Sun Valley, ID
+                        </a>
+                    </div>
+                    <div class="row p-1">
+                        <a href="#" class="gallery-city-btn show-on-scroll" style="background-image: url(images/drone/DJI_0177.jpg);">
+                            Galveston, TX
+                        </a>
+                    </div>
+    
+                </div>
+            
+                <div class="col-lg-4">
+                    <div class="row p-1">
+                        <a href="#" class="gallery-city-btn show-on-scroll" style="background-image: url(images/drone/DJI_0003.jpg);">
+                            Pensacola, FL
+                        </a>
+                    </div>
+                    <div class="row p-1">
+                        <a href="#" class="gallery-city-btn show-on-scroll" style="background-image: url(images/drone/DJI_0025.jpg);">
+                            Dallas, TX
+                        </a>
+                    </div>
+        
+                </div>
+            </div>
         </div>
-    
-        <div class="col-lg-4">
-        <img
-            src="images/drone/DJI_0028.jpg"
-            class="w-100 mb-3 show-on-scroll gallery-photo"
-            alt=""
-        />
-    
-        <img
-            src="images/drone/DJI_0058.jpg"
-            class="w-100 mb-3 show-on-scroll gallery-photo"
-            alt=""
-        />
-
-        <img
-            src="images/drone/DJI_0155.jpg"
-            class="w-100 mb-3 show-on-scroll gallery-photo"
-            alt=""
-        />
-        </div>
-    
-        <div class="col-lg-4">
-        <img
-            src="images/drone/DJI_0069.jpg"
-            class="w-100 mb-3 show-on-scroll gallery-photo"
-            alt=""
-        />
-    
-        <img
-            src="images/drone/DJI_0177.jpg"
-            class="w-100 mb-3 show-on-scroll gallery-photo"
-            alt=""
-        />
-
-        <img
-            src="images/drone/DJI_0185.jpg"
-            class="w-100 mb-3 show-on-scroll gallery-photo"
-            alt=""
-        />
-        </div>
-      </div>
     </div>
     <!-- End Photo Gallery -->
+    
+      
+
 
     <!-- Start Social Media Tags -->
     <div class="container-fluid social-media-container">
@@ -194,10 +143,6 @@
     </div>
     <!-- End Social Media Tags -->
 
-    
-
-
-  <!-- Video Gallery -->
 
     <!-- Footer -->
     <div class="container-fluid footer-container">
@@ -207,6 +152,7 @@
         </div>
       </div>
     </div>
+    <!-- End Footer -->
     
     
       

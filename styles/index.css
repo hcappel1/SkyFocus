@@ -6,3 +6,17 @@
 .front-heading-container h1 {
   font-size: 3em;
 }
+
+.gallery-btn {
+  width: 150px;
+  height: 70px;
+  border: 2px solid black;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
+}
+
+.gallery-btn:hover {
+  color: #cea135;
+  border: 2px solid #cea135;
+}
