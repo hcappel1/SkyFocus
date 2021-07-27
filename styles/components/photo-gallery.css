@@ -1,0 +1,12 @@
+.gallery-photo {
+  opacity: 0;
+  transform: translateY(4em);
+  transition: transform 2s 0.1s cubic-bezier(0, 1, 0.3, 1),
+    opacity 0.8s 0.1s ease-out;
+  will-change: transform, opacity;
+}
+
+.gallery-photo.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
