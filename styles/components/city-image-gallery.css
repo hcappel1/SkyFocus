@@ -112,7 +112,7 @@
 .chevron {
   position: absolute;
   bottom: 10px;
-  right: 45vw;
+  right: calc(50vw - 29px);
   border: 2px solid #fff;
   background-color: transparent;
   color: #fff;
@@ -132,13 +132,13 @@
 
 @media (max-width: 800px) {
   .slide .content {
-    bottom: -500px;
+    bottom: -600px;
     left: 0;
     width: 100%;
   }
 
   .content-active {
-    transform: translateY(-500px);
+    transform: translateY(-600px);
   }
 
   .buttons button#next {

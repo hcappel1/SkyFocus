@@ -62,6 +62,10 @@
 }
 
 @media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .burger-nav {
     visibility: visible;
   }
