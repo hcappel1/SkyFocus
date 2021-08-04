@@ -65,3 +65,9 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 800px) {
+  .video-container .box.active {
+    z-index: 1000;
+  }
+}
