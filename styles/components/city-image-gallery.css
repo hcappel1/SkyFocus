@@ -36,7 +36,7 @@
   width: 800px;
   background-color: rgba(255, 255, 255, 0.8);
   color: #333;
-  padding: 25px;
+  padding: 35px;
   z-index: 10;
   transition: all 0.7s ease-in-out;
 }
@@ -109,15 +109,36 @@
   background-color: #d2232a;
 }
 
+.chevron {
+  position: absolute;
+  bottom: 10px;
+  right: 45vw;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  z-index: 20;
+  visibility: hidden;
+}
+
+.chevron:hover {
+  background-color: #fff;
+  color: black;
+}
+
 @media (max-width: 800px) {
   .slide .content {
-    bottom: -300px;
+    bottom: -500px;
     left: 0;
     width: 100%;
   }
 
-  .slide.current .content {
-    transform: translateY(-300px);
+  .content-active {
+    transform: translateY(-500px);
   }
 
   .buttons button#next {
@@ -126,5 +147,20 @@
 
   .buttons button#prev {
     top: calc(1748.5px + 50vh);
+  }
+
+  .chevron {
+    visibility: visible;
+    transition: transform 0.6s ease-in;
+  }
+
+  .chevron-active {
+    transform: rotate(180deg);
+    color: black;
+    border: 2px solid black;
+  }
+
+  .burger {
+    visibility: hidden;
   }
 }

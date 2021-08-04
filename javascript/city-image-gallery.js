@@ -5,8 +5,9 @@ const auto = false;
 const intervalTime = 5000;
 let slideInterval;
 
-const burger = document.querySelector('.burger');
-const slideInfo = document.querySelector('.content');
+const chevrons_all = document.querySelectorAll('.chevron');
+const burgers_all = document.querySelectorAll('.burger');
+const slideInfo_all = document.querySelectorAll('.content');
 
 
 const nextSlide = () => {
@@ -56,7 +57,22 @@ if(auto) {
 }
 
 //Info bar
-burger.addEventListener('click',()=> {
-    slideInfo.classList.toggle('content-active');
-    burger.classList.toggle('toggle');
+burgers_all.forEach( function( element, index ) {
+    element.addEventListener('click',()=> {
+        slideInfo_all[index].classList.toggle('content-active');
+        element.classList.toggle('toggle');
+    });
 });
+
+chevrons_all.forEach( function( element, index ) {
+    element.addEventListener('click',()=> {
+        slideInfo_all[index].classList.toggle('content-active');
+        element.classList.toggle('chevron-active');
+    });
+});
+
+
+// burger.addEventListener('click',()=> {
+//     slideInfo.classList.toggle('content-active');
+//     burger.classList.toggle('toggle');
+// });

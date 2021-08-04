@@ -1,0 +1,24 @@
+.contact-container {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 700px;
+}
+
+.contact-header {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.contact-header h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-main {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.contact-main p {
+  font-family: "Montserrat", sans-serif;
+}
