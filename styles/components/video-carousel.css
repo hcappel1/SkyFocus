@@ -74,4 +74,8 @@
   .video-container .box.active {
     z-index: 1000;
   }
+
+  .video-container .box {
+    transition: 0s;
+  }
 }
