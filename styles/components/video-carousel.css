@@ -72,7 +72,7 @@
 
 @media (max-width: 800px) {
   .video-container .box.active {
-    z-index: 1000;
+    z-index: 2000;
   }
 
   .video-container .box {
