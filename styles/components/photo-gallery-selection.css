@@ -19,3 +19,18 @@
   color: black;
   opacity: 0.7;
 }
+
+@media (max-width: 800px) {
+  .gallery-city-btn {
+    height: 10vh;
+    /* color: rgba(0, 0, 0, 0.5); */
+    opacity: 0.7;
+    color: black;
+    background-position: center;
+  }
+
+  .gallery-city-btn:hover {
+    color: white;
+    opacity: 0.9;
+  }
+}
