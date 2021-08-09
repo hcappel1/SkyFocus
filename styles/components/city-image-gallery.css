@@ -142,11 +142,11 @@
   }
 
   .buttons button#next {
-    top: calc(1748.5px + 50vh);
+    top: calc(132.5px + 50vh + 6 * 10vh);
   }
 
   .buttons button#prev {
-    top: calc(1748.5px + 50vh);
+    top: calc(132.5px + 50vh + 6 * 10vh);
   }
 
   .chevron {

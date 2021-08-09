@@ -7,7 +7,7 @@ var i = 0;
 
 function changeVideo(windowWidth) {
     if (windowWidth.matches) {
-        window.setInterval(function () {
+        var autoplay = setInterval(function () {
             if (i == 0) {
                 box[2].classList.remove('active');
             }
@@ -25,6 +25,7 @@ function changeVideo(windowWidth) {
         }, 5000);
     }
     else {
+        clearInterval(autoplay);
         box.forEach(popup => popup.addEventListener('click', () => {
             popup.classList.toggle('active');
         }))
