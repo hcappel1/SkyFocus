@@ -1,6 +1,7 @@
+html,
 body {
+  position: relative;
   overflow-x: hidden;
-  -webkit-overflow-x: hidden;
 }
 
 .nav-container {
