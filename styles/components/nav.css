@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .nav-container {
   background: linear-gradient(to top, white, rgb(0, 217, 255));
 }

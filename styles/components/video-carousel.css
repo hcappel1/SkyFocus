@@ -18,20 +18,24 @@
 .video-container .box.box1 {
   background: #f00;
   -webkit-clip-path: polygon(0 0, 33% 0, 33% 100%, 0 100%);
+  clip-path: polygon(0 0, 33% 0, 33% 100%, 0 100%);
 }
 
 .video-container .box.box2 {
   background: #0f0;
   -webkit-clip-path: polygon(33% 0, 67% 0, 67% 100%, 33% 100%);
+  clip-path: polygon(33% 0, 67% 0, 67% 100%, 33% 100%);
 }
 
 .video-container .box.box3 {
   background: #00f;
   -webkit-clip-path: polygon(67% 0, 100% 0, 100% 100%, 67% 100%);
+  clip-path: polygon(67% 0, 100% 0, 100% 100%, 67% 100%);
 }
 
 .video-container .box.active {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .video-container .box:hover {
