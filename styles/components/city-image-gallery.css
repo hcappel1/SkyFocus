@@ -163,4 +163,9 @@
   .burger {
     visibility: hidden;
   }
+
+  .google-map {
+    width: 150px;
+    height: 300px;
+  }
 }
