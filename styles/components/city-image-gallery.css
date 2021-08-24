@@ -130,6 +130,21 @@
   color: black;
 }
 
+.etsy-link {
+  text-decoration: none;
+  font-size: 2em;
+  padding: 9px;
+  color: purple;
+  border: solid 2px purple;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.etsy-link:hover {
+  color: #cea135;
+  border: solid 2px #cea135;
+}
+
 @media (max-width: 800px) {
   .slide .content {
     bottom: -600px;
@@ -165,7 +180,26 @@
   }
 
   .google-map {
-    width: 150px;
+    width: 200px;
     height: 300px;
+  }
+
+  .etsy-link {
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 10px 2px;
+    color: purple;
+    border: solid 2px purple;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+
+  .etsy-link:hover {
+    color: #cea135;
+    border: solid 2px #cea135;
+  }
+
+  .content.content-active {
+    padding: 30px 2px;
   }
 }
