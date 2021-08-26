@@ -7,7 +7,7 @@ var i = 0;
 
 function changeVideo(windowWidth) {
     if (windowWidth.matches) {
-        var autoplay = setInterval(function () {
+        function changeVideoSetup() {
             if (i == 0) {
                 box[2].classList.remove('active');
             }
@@ -15,14 +15,26 @@ function changeVideo(windowWidth) {
                 box[i-1].classList.remove('active');
             }
             box[i].classList.add('active');
-            console.log(i);
-            if (i < 2) {
-                i++;
-            }
-            else {
-                i = 0;
-            }
-        }, 5000);
+        }
+
+        changeVideoSetup();
+
+        var autoplay = setInterval(() => {
+                if (i == 0) {
+                    box[2].classList.remove('active');
+                }
+                else {
+                    box[i - 1].classList.remove('active');
+                }
+                box[i].classList.add('active');
+                console.log(i);
+                if (i < 2) {
+                    i++;
+                }
+                else {
+                    i = 0;
+                }
+            }, 5000);
     }
     else {
         clearInterval(autoplay);
