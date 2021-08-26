@@ -8,18 +8,15 @@ var i = 0;
 function changeVideo(windowWidth) {
     if (windowWidth.matches) {
         function changeVideoSetup() {
-            if (i == 0) {
-                box[2].classList.remove('active');
-            }
-            else {
-                box[i-1].classList.remove('active');
-            }
-            box[i].classList.add('active');
+            box[0].classList.add('active');
         }
 
         changeVideoSetup();
 
         var autoplay = setInterval(() => {
+                var video = document.getElementById('timelapse'+i);
+                console.log("timelapse"+i);
+                video.play();
                 if (i == 0) {
                     box[2].classList.remove('active');
                 }
