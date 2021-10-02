@@ -6,7 +6,8 @@ body {
 
 .nav-container {
   /* background: linear-gradient(to top, white, rgb(0, 217, 255)); */
-  background-color: #7c85f0;
+  /* background-color: #7c85f0; */
+  background:rgba(0, 0, 0, 0.05);
 }
 
 .nav-items-container {
@@ -19,13 +20,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60vw;
+  width: 70vw;
   visibility: visible;
 }
 
 .menu-items-main li {
   list-style: none;
-  width: 90px;
+  width: 120px;
   text-align: center;
 }
 

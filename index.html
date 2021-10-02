@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/components/photo-gallery.css">
     <link rel="stylesheet" href="styles/components/social-media-tags.css">
     <link rel="stylesheet" href="styles/components/contact-tab.css">
+    <link rel="stylesheet" href="styles/components/contact-form.css">
 
 
     <!-- Fonts -->
@@ -35,7 +36,7 @@
             <div class="row py-3 justify-content-center">
                 <div class="col-auto">
                     <a class="navbar-brand" href="#">
-                        <img src="images/logos/web_assets_Wordmark_black.png" height="50vh" alt="Logo">
+                        <img src="images/logos/web_assets_Wordmark_brand_color.png" height="50vh" alt="Logo">
                       </a>
                 </div>
             </div>
@@ -48,7 +49,10 @@
                       <a href="gallery.html">Gallery</a>
                     </li>
                     <li>
-                      <a href="contact.html">Contact</a>
+                      <a href="https://www.etsy.com/shop/SkyFocusPhotography?ref=seller-platform-mcnav" target="_blank">Etsy Shop</a>
+                    </li>
+                    <li>
+                      <a href="#" id="contact-tab">Contact</a>
                     </li>
                     <li>
                       <a href="about.html">About</a>
@@ -62,6 +66,45 @@
           </div>
         </div>
     </nav>
+    <!-- End nav menu -->
+
+    <!-- Start Contact form -->
+    <div class="container-fluid contact-form-container" id="contact-form-id">
+      <form action="">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <div class="form-floating m-3">
+              <input type="text" class="form-control" id="InputFirstName" placeholder="First Name">
+              <label for="InputFirstName" style="color: #7c85f0">First Name</label>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="form-floating m-3">
+              <input type="text" class="form-control" id="InputLastName" placeholder="Last Name">
+              <label for="InputLastName" style="color: #7c85f0">Last Name</label>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="form-floating m-3">
+              <input type="text" class="form-control" id="InputEmail" placeholder="Email">
+              <label for="InputEmail" style="color: #7c85f0">Email</label>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <textarea class="form-control" placeholder="Write Message Here" id="TextArea" style="height: 200px; width: 60vw;"></textarea>
+            <label for="TextArea"></label>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <button class="btn btn-primary contact-form-btn mb-3" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- End contact form -->
 
     
     <!-- Video Gallery -->
@@ -96,7 +139,8 @@
             <hr>
             <p>Austin TX, Chicago IL, Sun Valley ID, Galveston TX, Dallas TX, Pensacola FL</p>
             <br>
-            <button class="gallery-btn" onclick="window.location.href='gallery.html'">See Galleries</button>
+            <!-- <button class="gallery-btn" onclick="window.location.href='gallery.html'">See Galleries</button> -->
+            <button class="gallery-btn" onclick="window.location.href='https://www.etsy.com/shop/SkyFocusPhotography?ref=seller-platform-mcnav'" target="_blank">See Etsy Shop</button>
           </div>
         </div>
       </div>
@@ -231,6 +275,7 @@
     <script src="javascript/video-carousel.js"></script>
     <script src="javascript/main-image-gallery.js"></script>
     <script src="javascript/nav.js"></script>
+    <script src="javascript/contact-form.js"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
 
   </body>

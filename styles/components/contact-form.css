@@ -1,0 +1,17 @@
+.contact-form-container {
+    display: none;
+    visibility: hidden;
+    transition: all 0.5s;
+    background: rgba(0,0,0,0.05);
+}
+
+.contact-form-btn {
+    background-color: #7c85f0; 
+    border: none;
+}
+
+.show-form {
+    display: block;
+    visibility: visible;
+    background: rgba(0,0,0,0.05);
+}
