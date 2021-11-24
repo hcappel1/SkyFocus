@@ -55,14 +55,14 @@
 
 .buttons button#next {
   position: absolute;
-  top: calc(716.5px + 50vh);
+  top: calc(716.5px + 30vh);
   right: 15px;
   width: 3.5em;
 }
 
 .buttons button#prev {
   position: absolute;
-  top: calc(716.5px + 50vh);
+  top: calc(716.5px + 30vh);
   left: 15px;
   width: 3.5em;
 }
