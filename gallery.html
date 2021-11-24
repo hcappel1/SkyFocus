@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/components/photo-gallery-selection.css">
     <link rel="stylesheet" href="styles/components/city-image-gallery.css">
     <link rel="stylesheet" href="styles/components/contact-tab.css">
+    <link rel="stylesheet" href="styles/components/contact-form.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -49,10 +50,10 @@
                       <a href="gallery.html">Gallery</a>
                     </li>
                     <li>
-                        <a href="https://www.etsy.com/shop/SkyFocusPhotography?ref=seller-platform-mcnav" target="_blank">Etsy Shop</a>
+                      <a href="https://www.etsy.com/shop/SkyFocusPhotography?ref=seller-platform-mcnav" target="_blank">Etsy Shop</a>
                     </li>
                     <li>
-                      <a href="contact.html">Contact</a>
+                      <a href="#" id="contact-tab">Contact</a>
                     </li>
                     <li>
                       <a href="about.html">About</a>
@@ -66,7 +67,54 @@
           </div>
         </div>
     </nav>
-    <!-- End Nav Menu -->
+    <!-- End nav menu -->
+
+    <!-- Start Contact form -->
+    <div class="container-fluid contact-form-container" id="contact-form-id">
+      <form action="https://formsubmit.co/6bf31a793772b008ddbab47a46718cc3" method="POST">
+
+        <!-- Honeypot -->
+        <input type="text" name="_honey" style="display: none;">
+
+        <!-- Disable Captcha -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- Success page -->
+        <input type="hidden" name="_next" value="success.html">
+
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <div class="form-floating m-3">
+              <input type="text" class="form-control" name="name" id="InputFirstName" placeholder="First Name" required>
+              <label for="InputFirstName" style="color: #7c85f0">First Name</label>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="form-floating m-3">
+              <input type="text" class="form-control" name="Last&nbsp;Name" id="InputLastName" placeholder="Last Name" required>
+              <label for="InputLastName" style="color: #7c85f0">Last Name</label>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="form-floating m-3">
+              <input type="text" class="form-control" name="Email" id="InputEmail" placeholder="Email" required>
+              <label for="InputEmail" style="color: #7c85f0">Email</label>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <textarea class="form-control" name="Message" placeholder="Write Message Here" id="TextArea" style="height: 200px; width: 60vw;" required></textarea>
+            <label for="TextArea"></label>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <button class="btn btn-primary contact-form-btn mb-3" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
 
     <!-- Start Gallery Selection -->
     <div class="container-fluid">
