@@ -1,13 +1,30 @@
+const austin_btn = document.querySelector('.austin-btn');
+const sv_btn = document.querySelector('.sv-btn');
 const slides = document.querySelectorAll('.slide');
+
+austin_btn.addEventListener('click', e => {
+    const current = document.querySelector('.current');
+    current.classList.remove('current');
+    slides[0].classList.add('current');
+});
+
+sv_btn.addEventListener('click', e => {
+    const current = document.querySelector('.current');
+    current.classList.remove('current');
+    slides[3].classList.add('current');
+});
+
+
+
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
 const auto = false;
 const intervalTime = 5000;
 let slideInterval;
 
-const chevrons_all = document.querySelectorAll('.chevron');
-const burgers_all = document.querySelectorAll('.burger');
-const slideInfo_all = document.querySelectorAll('.content');
+const chevrons_all = document.querySelectorAll('.chevron-austin');
+const burgers_all = document.querySelectorAll('.burger-austin');
+const slideInfo_all = document.querySelectorAll('.content-austin');
 
 
 const nextSlide = () => {
