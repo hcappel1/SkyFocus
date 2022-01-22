@@ -15,31 +15,31 @@ austin_btn.addEventListener('click', e => {
 sv_btn.addEventListener('click', e => {
     const current = document.querySelector('.current');
     current.classList.remove('current');
-    slides[3].classList.add('current');
+    slides[4].classList.add('current');
 });
 
 pensacola_btn.addEventListener('click', e => {
     const current = document.querySelector('.current');
     current.classList.remove('current');
-    slides[4].classList.add('current');
+    slides[5].classList.add('current');
 });
 
 chicago_btn.addEventListener('click', e => {
     const current = document.querySelector('.current');
     current.classList.remove('current');
-    slides[6].classList.add('current');
+    slides[7].classList.add('current');
 });
 
 dillon_btn.addEventListener('click', e => {
     const current = document.querySelector('.current');
     current.classList.remove('current');
-    slides[7].classList.add('current');
+    slides[8].classList.add('current');
 });
 
 galveston_btn.addEventListener('click', e => {
     const current = document.querySelector('.current');
     current.classList.remove('current');
-    slides[8].classList.add('current');
+    slides[9].classList.add('current');
 });
 
 
