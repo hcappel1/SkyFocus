@@ -1,5 +1,9 @@
 const austin_btn = document.querySelector('.austin-btn');
 const sv_btn = document.querySelector('.sv-btn');
+const pensacola_btn = document.querySelector('.pensacola-btn');
+const chicago_btn = document.querySelector('.chicago-btn');
+const galveston_btn = document.querySelector('.galveston-btn');
+const dillon_btn = document.querySelector('.pensacola-btn');
 const slides = document.querySelectorAll('.slide');
 
 austin_btn.addEventListener('click', e => {
@@ -12,6 +16,30 @@ sv_btn.addEventListener('click', e => {
     const current = document.querySelector('.current');
     current.classList.remove('current');
     slides[3].classList.add('current');
+});
+
+pensacola_btn.addEventListener('click', e => {
+    const current = document.querySelector('.current');
+    current.classList.remove('current');
+    slides[4].classList.add('current');
+});
+
+chicago_btn.addEventListener('click', e => {
+    const current = document.querySelector('.current');
+    current.classList.remove('current');
+    slides[6].classList.add('current');
+});
+
+dillon_btn.addEventListener('click', e => {
+    const current = document.querySelector('.current');
+    current.classList.remove('current');
+    slides[7].classList.add('current');
+});
+
+galveston_btn.addEventListener('click', e => {
+    const current = document.querySelector('.current');
+    current.classList.remove('current');
+    slides[8].classList.add('current');
 });
 
 
