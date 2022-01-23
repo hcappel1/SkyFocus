@@ -4,3 +4,9 @@
   background-size: cover;
   height: 1400px;
 }
+
+@media (max-width: 720px) {
+  .about-container {
+    height: 4000px;
+  }
+}
