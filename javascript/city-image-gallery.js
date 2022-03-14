@@ -3,7 +3,7 @@ const sv_btn = document.querySelector('.sv-btn');
 const pensacola_btn = document.querySelector('.pensacola-btn');
 const chicago_btn = document.querySelector('.chicago-btn');
 const galveston_btn = document.querySelector('.galveston-btn');
-const dillon_btn = document.querySelector('.pensacola-btn');
+const dillon_btn = document.querySelector('.dillon-btn');
 const slides = document.querySelectorAll('.slide');
 
 austin_btn.addEventListener('click', e => {
