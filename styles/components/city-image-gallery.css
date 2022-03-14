@@ -160,16 +160,12 @@
 }
 
 @media (max-width: 800px) {
-  .slider {
-    position: relative;
-    overflow: hidden;
-    width: 100vw;
-  }
 
   .slide .content {
     bottom: -600px;
     left: 0;
     width: 100%;
+    height: auto;
   }
 
   .content-active {
