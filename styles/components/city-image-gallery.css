@@ -160,12 +160,14 @@
 }
 
 @media (max-width: 800px) {
+  .slide {
+    height: auto;
+  }
 
   .slide .content {
     bottom: -600px;
     left: 0;
     width: 100%;
-    height: auto;
   }
 
   .content-active {
