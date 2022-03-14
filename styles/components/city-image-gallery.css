@@ -160,9 +160,6 @@
 }
 
 @media (max-width: 800px) {
-  .slide {
-    height: auto;
-  }
 
   .slide .content {
     bottom: -600px;
